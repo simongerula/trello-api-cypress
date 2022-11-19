@@ -1,4 +1,4 @@
-# Despegar Flightsearch Automation
+# Trello board API automation
 ***
 ### Automated test interacting with the Trello API.
 ### This framework was made with Cypress 10.
