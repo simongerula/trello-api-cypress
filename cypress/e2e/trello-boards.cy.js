@@ -52,7 +52,9 @@ describe ('API testing on Trello boards', ()=>{
                     expect(res.body[card]).to.not.deep.include({'id':idCardOne})
                 }
         })
+    })
 
+    it('should create "card-one" again on the top of column-one', () => {
         cy.request('POST', `https://api.trello.com/1/cards?idList=${idListOne}&key=3cdd706ac88f1d2e14ccb61ed3e4057f&token=2ea03b4c5317fc877fed99279daea0f2a3f4cd81355baf482e51dd1897504787`, {
             'name': dataNames.cardOneName,
             'pos': 'top'
